@@ -1,7 +1,8 @@
----
+/#---
 - hosts: localhost
   tasks:
     - name: Deploy Flask app to Kubernetes
       shell: |
         kubectl apply -f k8s-deployment.yaml --validate=false
         kubectl apply -f k8s-service.yaml --validate=false
+#/
